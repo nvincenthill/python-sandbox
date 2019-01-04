@@ -10,4 +10,4 @@ def fib2(n):   # return Fibonacci series up to n
     return result
 
 
-print(fib2(5))
+# print(fib2(5))
