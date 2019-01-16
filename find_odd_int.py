@@ -1,13 +1,7 @@
 def find_odd_int(seq):
-    tally = {}
     for i in seq:
-        if i in tally:
-            tally[i] = not tally[i]
-        else:
-            tally[i] = True
-    for j in tally:
-        if tally[j]:
-            return j
+        if seq.count(i) % 2 != 0:
+            return i
 
 
-print(find_odd_int([1, 2, 3, 1, 2]))
+# print(find_odd_int([1, 2, 3, 1, 2]))
