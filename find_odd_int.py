@@ -2,7 +2,7 @@ def find_odd_int(seq):
     tally = {}
     for i in seq:
         if i in tally:
-            tally[i] = False
+            tally[i] = not tally[i]
         else:
             tally[i] = True
     for j in tally:
