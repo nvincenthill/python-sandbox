@@ -12,8 +12,4 @@
 
 
 def get_sum(a, b):
-    if a == b:
-        return a
-    largest = a if a > b else b
-    smallest = b if b < a else a
-    return sum(x for x in range(smallest, largest + 1))
+    return sum(range(min(a, b), max(a, b)+1))
